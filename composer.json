@@ -2,11 +2,13 @@
     "name": "adaoreis/crud",
     "description": "CRUD PHP for DB",
     "type": "library",
+    "version": "1.0",
     "license": "1",
     "authors": [
         {
             "name": "Adao jose",
-            "email": "adao.jose123.a.r@gmail.com"
+            "email": "adao.jose123.a.r@gmail.com",
+            "role": "creator"
         }
     ],
     "autoload":{
@@ -14,6 +16,8 @@
             "Adaoreis\\BD\\":"con/"
         }
     },
-    "minimum-stability": "beta",
-    "require": {}
+    "minimum-stability": "dev",
+    "require": {
+        "php":">5.4"
+    }
 }
