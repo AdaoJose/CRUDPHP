@@ -1,5 +1,5 @@
 {
-    "name": "cidinha/crud",
+    "name": "adaoreis/crud",
     "description": "CRUD PHP for DB",
     "type": "library",
     "license": "1",
@@ -11,7 +11,7 @@
     ],
     "autoload":{
         "psr-4":{
-            "BD\\":"con/"
+            "Adaoreis\\BD\\":"con/"
         }
     },
     "minimum-stability": "beta",
