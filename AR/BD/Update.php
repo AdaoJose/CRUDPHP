@@ -5,7 +5,7 @@
  * Classe responsável por atualizações genéticas no banco de dados!
  * 
  * @copyright (c) 2020, Adão José
- */namespace BD;
+ */namespace AR\BD;
 
 class Update extends Connection {
 

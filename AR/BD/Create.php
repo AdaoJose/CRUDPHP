@@ -6,7 +6,7 @@
  * 
  * @copyright (c) 2020, Adão José
  */
-namespace BD;
+namespace AR\BD;
 class Create extends Connection {
 
     private $Tabela;

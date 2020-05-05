@@ -6,9 +6,9 @@
  * 
  * @copyright (c) 2020, Adão José
  */
-namespace BD;
+namespace AR\BD;
 use PDO;
-class Read extends \BD\Connection {
+class Read extends Connection {
 
     private $Select;
     private $Places;

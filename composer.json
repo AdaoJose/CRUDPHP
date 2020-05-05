@@ -11,13 +11,15 @@
             "role": "creator"
         }
     ],
-    "autoload":{
-        "psr-4":{
-            "Adaoreis\\BD\\":"con/"
-        }
-    },
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.2"
+        "php": "^7.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "AR\\BD\\":"./AR/BD",
+            "Teste\\testeando\\":"./testa"
+        }
     }
+    
 }

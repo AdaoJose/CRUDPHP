@@ -7,7 +7,7 @@
  * 
  * @copyright (c) 2020, Adão José
  */
-namespace BD;
+namespace AR\BD;
 use \PDO;
 abstract class Connection {
 

@@ -6,7 +6,7 @@
  * 
  * @copyright (c) 2020, Adão José
  */
-namespace BD;
+namespace AR\BD;
 class Delete extends Connection {
 
     private $Tabela;

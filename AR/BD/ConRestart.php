@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace BD;
+namespace AR\BD;
 
 /**
  * Description of ConRestart
