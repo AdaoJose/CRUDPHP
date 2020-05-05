@@ -17,8 +17,7 @@
     },
     "autoload":{
         "psr-4":{
-            "AR\\BD\\":"./AR/BD",
-            "Teste\\testeando\\":"./testa"
+            "AR\\BD\\":"./AR/BD"
         }
     }
     
