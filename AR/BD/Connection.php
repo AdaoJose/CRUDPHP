@@ -1,4 +1,5 @@
 <?php
+namespace AR\BD;
 //incluindo os arquivos de configurações
 if(file_exists("../conf/config.ar.ini.php")){
     include '../conf/config.ar.ini.php';
@@ -10,7 +11,7 @@ if(file_exists("../conf/config.ar.ini.php")){
  * 
  * @copyright (c) 2020, Adão José
  */
-namespace AR\BD;
+
 use \PDO;
 abstract class Connection {
 

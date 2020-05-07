@@ -11,7 +11,7 @@
  * ->getResult() # Retorna o resultado da consulta
  * ->getRowCount() # retorna o numero de registro retornado pela consulta
  */
-require './vendor/adaoreis/crud/vendor/autoload.php';
+require '../vendor/adaoreis/crud/vendor/autoload.php';
 $loginDB = array("HOST"=>"localhost",'USER'=>"root", 'PASS'=>"", 'DBSA'=>"");
 define("HOST","localhost"); //constane HOST
 define('USER',"root");// usuario do banco de dados
