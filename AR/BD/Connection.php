@@ -1,5 +1,8 @@
 <?php
-
+//incluindo os arquivos de configurações
+if(file_exists("../conf/config.ar.ini.php")){
+    include '../conf/config.ar.ini.php';
+}
 /**
  * Conn.class [ CONEXÃO ]
  * Classe abstrata de conexão. Padrão SingleTon.
