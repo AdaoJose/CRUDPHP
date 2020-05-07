@@ -1,10 +1,10 @@
 <?php
 namespace AR\BD;
 //incluindo os arquivos de configurações
-if(file_exists(dirname(__FILE__)."../conf/config.ar.ini.php")){
-    include dirname(__FILE__).'../conf/config.ar.ini.php';
+if(file_exists(__DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."conf".DIRECTORY_SEPARATOR."config.ar.ini.php")){
+    include __DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."conf".DIRECTORY_SEPARATOR."config.ar.ini.php";
 }else{
-    die("Não encontrado o arquivo de configuração em ". __DIR__);
+    die("Não encontrado o arquivo de configuração em ".__DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."conf".DIRECTORY_SEPARATOR."config.ar.ini.php");
 }
 /**
  * Conn.class [ CONEXÃO ]
@@ -20,7 +20,7 @@ abstract class Connection {
     private static $Host = HOST;
     private static $User = USER;
     private static $Pass = PASS;
-    private static $Dbsa = DBSA;
+    private static $Dbsa = DB;
 
     /** @var PDO */
     private static $Connect = null;
