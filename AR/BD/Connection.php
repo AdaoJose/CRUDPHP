@@ -1,8 +1,10 @@
 <?php
 namespace AR\BD;
 //incluindo os arquivos de configurações
-if(file_exists("../conf/config.ar.ini.php")){
-    include '../conf/config.ar.ini.php';
+if(file_exists(dirname(__FILE__)."../conf/config.ar.ini.php")){
+    include dirname(__FILE__).'../conf/config.ar.ini.php';
+}else{
+    die("Não encontrado o arquivo de configuração em ". realpath());
 }
 /**
  * Conn.class [ CONEXÃO ]
