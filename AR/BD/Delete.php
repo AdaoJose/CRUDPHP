@@ -7,6 +7,7 @@
  * @copyright (c) 2020, Adão José
  */
 namespace AR\BD;
+use PDO;
 class Delete extends Connection {
 
     private $Tabela;
