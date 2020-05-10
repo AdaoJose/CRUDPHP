@@ -8,7 +8,7 @@
  */
 namespace AR\BD;
 use PDO;
-class Delete extends Connection {
+class Delete extends \AR\BD\Connection{
 
     private $Tabela;
     private $Termos;

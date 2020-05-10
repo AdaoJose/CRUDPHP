@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Teste\\testeando\\' => array($baseDir . '/testa'),
     'AR\\BD\\' => array($baseDir . '/AR/BD'),
+    'AR\\ABS\\' => array($baseDir . '/AR/activeRecord'),
 );
