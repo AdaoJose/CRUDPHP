@@ -190,7 +190,6 @@ abstract class ActiveRecord {
               $instancia->$key = $value;  
             }   
         }
-        echo "<pre>". var_dump($newObj)." </pre>";
         return $instancia;  
         
     }
