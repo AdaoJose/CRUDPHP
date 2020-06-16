@@ -56,34 +56,54 @@ abstract class ActiveRecord {
             unset($this->content[$this->idField]);
         }
     }
-    /*
+    /**
      * Retorna Content na forma de um array
      * @return Array
      */
     public function  toArray(){
         return $this->content;
     }
-    /*
+    /**
      * <b>fromArray</b> 
      * recebe o array com os dados com o qual se pretende trabalhar
      */
     public function fromArray(array $array){
         $this->content = $array;
     }
-    /*
+    /**
      * <b>toJson</b>
      * retorna content no formato json
      */
     public function toJson(){
         return json_encode($this->content);
     }
-    /*
+    /**
      * <b>fromJson</b>
      * Recebe JSON de dados com o qual se deve trabalhar
      */
     public function fromJson(string $json){
         $this->content = json_decode($json);
     }
+    
+    /**
+     *<b>Eatch</b>
+     * itera o conteudo ldo content
+     * @param function $calbeck recebe o parametro array contendo cada um dos values individuais
+     * 
+     * $OBJ->eatch(function($array){
+     *  echo $array['id'];
+     * }) 
+     */
+    public function eatch($calback){
+        foreach ($this->toArray() as $key => $value) {
+            
+            call_user_func_array($calback, $value);
+            
+        }
+        
+    }
+
+
     private function format($value){
         if (is_string($value) && !empty($value)) {
             return "'" . addslashes($value) . "'";
