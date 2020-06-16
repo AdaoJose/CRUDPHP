@@ -95,7 +95,7 @@ abstract class ActiveRecord {
      * }) 
      */
     public function eatch($calback){
-        foreach ($this->toArray() as $key => $value) {
+        foreach ($this->toArray() as $value) {
             
             call_user_func_array($calback, $value);
             
