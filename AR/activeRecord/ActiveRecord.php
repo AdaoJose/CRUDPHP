@@ -86,15 +86,15 @@ abstract class ActiveRecord {
     }
     
     /**
-     *<b>Eatch</b>
+     *<b>Each</b>
      * itera o conteudo ldo content
      * @param function $calbeck recebe o parametro array contendo cada um dos values individuais
      * 
-     * $OBJ->eatch(function($array){
+     * $OBJ->each(function($array){
      *  echo $array['id'];
      * }) 
      */
-    public function eatch($calback){
+    public function each($calback){
         foreach ($this->content as $value) {
             
             call_user_func($calback, $value);
