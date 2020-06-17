@@ -86,6 +86,9 @@ abstract class ActiveRecord {
      */
     public function fromJson(string $json){
         $this->content = json_decode($json);
+        if(array_key_exists($this->idField, $this->content)){//verifica se possui id se sim seta o id; mesmo comportamento de formArray;
+            $this->{$this->idField} = $this->content[$this->idField];
+        }
     }
     
     /**
