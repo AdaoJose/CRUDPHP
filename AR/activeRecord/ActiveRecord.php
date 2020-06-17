@@ -101,10 +101,10 @@ abstract class ActiveRecord {
      * }) 
      */
     public function each($calback){
-        foreach ($this->content as $value) {
-            
-            call_user_func($calback, $value);
-            
+        if(is_array($this->content)){//verifica se o valor é array
+            foreach ($this->content as $value) {
+                call_user_func($calback, $value);
+            }
         }
         
     }
