@@ -68,6 +68,9 @@ abstract class ActiveRecord {
      * recebe o array com os dados com o qual se pretende trabalhar
      */
     public function fromArray(array $array){
+        if(array_key_exists($this->idField, $array)){//verifica se possui id se sim seta o id;
+            $this->{$this->idField} = $array[$this->idField];
+        }
         $this->content = $array;
     }
     /**
