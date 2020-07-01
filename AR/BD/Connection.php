@@ -37,7 +37,7 @@ abstract class Connection {
     private static function Conectar() {
         try {
             if (self::$Connect == null):
-                $dsn = 'mysql:host=' . self::$Host . ';port='. self::$porta .';dbname=' . self::$Dbsa;
+                $dsn = 'mysql:host=' . self::$Host . ';port='. self::$port .';dbname=' . self::$Dbsa;
                 $options = [ PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'];
                 self::$Connect = new PDO($dsn, self::$User, self::$Pass, $options);
             endif;
