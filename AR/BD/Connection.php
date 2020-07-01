@@ -21,7 +21,7 @@ abstract class Connection {
     static $User = '';
     static $Pass = '';
     static $Dbsa = '';
-    static $porta =  3306;
+    static $port =  3306;
 
     /** @var PDO */
     private static $Connect = null;
