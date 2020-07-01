@@ -17,10 +17,11 @@ if(file_exists(__DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."conf".DIREC
 use \PDO;
 abstract class Connection {
 
-    private static $Host = HOST;
-    private static $User = USER;
-    private static $Pass = PASS;
-    private static $Dbsa = DB;
+    static $Host = '';
+    static $User = '';
+    static $Pass = '';
+    static $Dbsa = '';
+    static $porta =  3306;
 
     /** @var PDO */
     private static $Connect = null;
@@ -36,7 +37,7 @@ abstract class Connection {
     private static function Conectar() {
         try {
             if (self::$Connect == null):
-                $dsn = 'mysql:host=' . self::$Host . ';dbname=' . self::$Dbsa;
+                $dsn = 'mysql:host=' . self::$Host . ';port='. self::$porta .';dbname=' . self::$Dbsa;
                 $options = [ PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'];
                 self::$Connect = new PDO($dsn, self::$User, self::$Pass, $options);
             endif;
